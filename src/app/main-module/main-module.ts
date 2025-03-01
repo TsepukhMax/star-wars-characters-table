@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { MatTableModule } from '@angular/material/table';
 
 import { StarWarsComponent } from "./components/star-wars/star-wars.component";
 import { CharactersTableComponent } from "./components/character-table/characters-table.component";
@@ -11,6 +12,9 @@ import { PlanetPopoverComponent } from "./components/planet-popover/planet-popov
     CharactersTableComponent,
     CharacterSearchComponent,
     PlanetPopoverComponent,
+  ],
+  imports: [
+    MatTableModule,
   ],
   exports: [
     StarWarsComponent,
