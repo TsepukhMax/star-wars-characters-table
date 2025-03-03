@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IPlanet } from '../../../interfaces';
 
 @Component({
   selector: 'app-planet-popover',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './planet-popover.component.scss',
   standalone: false,
 })
-export class PlanetPopoverComponent {}
+export class PlanetPopoverComponent {
+  @Input() planet!: IPlanet;
+}

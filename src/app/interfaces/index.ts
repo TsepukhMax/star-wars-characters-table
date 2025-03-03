@@ -18,4 +18,5 @@ export interface IPlanet {
   climate: string;
   terrain: string;
   population: string;
+  url: string;
 }

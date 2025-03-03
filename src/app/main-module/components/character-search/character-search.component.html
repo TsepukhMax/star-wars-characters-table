@@ -1,0 +1,9 @@
+<mat-form-field>
+  <div class="search-container">
+    <!-- <img src="../../../../../public/img copy/search.jpg" alt="Search Icon" class="search-icon" /> -->
+    <input (input)="onInput()" matInput type="text" [(ngModel)]="value" placeholder="Search">
+    <button matSuffix mat-icon-button (click)="onReset()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</mat-form-field>

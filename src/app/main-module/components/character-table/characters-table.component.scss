@@ -1,0 +1,25 @@
+:host {
+  position: relative;
+  display: block;
+}
+
+.table-row {
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: #939292;
+  }
+
+  &.selected {
+    background-color: #72c1f9;
+    color: white;
+  }
+}
+
+app-planet-popover {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

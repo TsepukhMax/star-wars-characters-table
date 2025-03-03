@@ -1,0 +1,17 @@
+.popover-container {
+  background-color: #f10505;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  position: relative;
+}
+
+.popover-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.popover-container p {
+  margin: 3px 0;
+}

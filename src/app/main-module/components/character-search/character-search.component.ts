@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-character-search',
@@ -6,4 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './character-search.component.scss',
   standalone: false,
 })
-export class CharacterSearchComponent {}
+export class CharacterSearchComponent {
+  public value = "";
+
+  @Output() searchTermChanged = new EventEmitter<string>();
+
+  onInput(): void {
+    this.searchTermChanged.emit(this.value);
+  }
+
+  onReset(): void {
+    this.value = "";
+    this.searchTermChanged.emit('');
+  }
+}

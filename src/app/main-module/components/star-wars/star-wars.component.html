@@ -1,5 +1,4 @@
 <div class="container">
-  <app-character-search></app-character-search>
-  <app-characters-table></app-characters-table>
-  <app-planet-popover></app-planet-popover>
+  <app-character-search (searchTermChanged)="onSearchTermChanged($event)"></app-character-search>
+  <app-characters-table [people]="filteredPeople"></app-characters-table>
 </div>
