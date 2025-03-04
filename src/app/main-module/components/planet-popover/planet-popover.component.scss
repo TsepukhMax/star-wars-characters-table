@@ -1,17 +1,26 @@
 .popover-container {
-  background-color: #f10505;
+  background-color: #d1d2eb;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 250px;
   position: relative;
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    margin: 5px 0;
+  }
 }
 
-.popover-container h3 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-
-.popover-container p {
-  margin: 3px 0;
+/* ------------------------------------------------ */
+@media (max-width: 1200px) {
+  .popover-container {
+    padding: 8px;
+    max-width: 200px;
+  }
 }

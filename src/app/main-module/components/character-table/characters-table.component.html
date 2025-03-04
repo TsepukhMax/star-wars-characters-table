@@ -17,7 +17,13 @@
 
   <tr mat-header-row *matHeaderRowDef="[ 'characterName', 'gender', 'birthYear']"></tr>
   <tr mat-row *matRowDef="let row; columns: [ 'characterName', 'gender', 'birthYear']"
-    (click)="requestPlanet(row, $event)">
+    (click)="requestPlanet(row, $event)"
+    [ngClass]="{'selected': selectedPerson === row}"
+    class="data-row">
   </tr>
 </table>
-<app-planet-popover *ngIf="selectedPlanet" [planet]="selectedPlanet" [ngStyle]="{top: topCoordinate + 'px'}"></app-planet-popover>
+<app-planet-popover 
+  *ngIf="selectedPlanet" 
+  [planet]="selectedPlanet" 
+  [ngStyle]="{top: topCoordinate +'px'}">
+</app-planet-popover>

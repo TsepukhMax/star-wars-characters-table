@@ -1,4 +1,2 @@
-<div class="container">
-  <app-character-search (searchTermChanged)="onSearchTermChanged($event)"></app-character-search>
-  <app-characters-table [people]="filteredPeople"></app-characters-table>
-</div>
+<app-character-search (searchTermChanged)="onSearchTermChanged($event)"></app-character-search>
+<app-characters-table [people]="filteredPeople"></app-characters-table>
